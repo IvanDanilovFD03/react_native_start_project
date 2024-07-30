@@ -1,0 +1,7 @@
+{
+  "include": ["src", "App.tsx", ".eslintrc.js"],
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": false
+  }
+}

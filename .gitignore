@@ -39,3 +39,7 @@ yarn-error.*
 *.app
 *.exe
 *.war
+
+.eslintcache
+
+expo-env.d.ts
