@@ -4,7 +4,8 @@ const exampleApi = {
   getExample: async () => {
     try {
       const response = await api.get("example/self/");
-      return response.data;
+
+      return response.data as { example: string };
     } catch (error) {
       throw error;
     }

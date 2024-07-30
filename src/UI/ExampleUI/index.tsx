@@ -1,6 +1,5 @@
 import React, { FC } from "react";
-
-import { Pressable, StyleSheet, View } from "react-native";
+import { Pressable, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
 import { styles } from "./styles";
@@ -20,9 +19,9 @@ export const ExampleUI: FC<ExampleUIProps> = React.memo(
         style={({ pressed }) => pressed && styles.pressed}
       >
         <View style={styles.buttonContainer}>
-          <Ionicons name={icon} size={size} color={color} />
+          <Ionicons color={color} name={icon} size={size} />
         </View>
       </Pressable>
     );
-  }
+  },
 );

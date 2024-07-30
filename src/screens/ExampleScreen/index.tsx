@@ -1,7 +1,6 @@
 import React, { FC } from "react";
-
-import { ExampleSection } from "modules/ExampleModule";
 import { View } from "react-native";
+import { ExampleSection } from "modules/ExampleModule";
 
 import { styles } from "./styles";
 

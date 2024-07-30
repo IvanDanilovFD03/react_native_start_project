@@ -4,10 +4,11 @@ const exampleModuleApi = {
   postModuleExample: async (email: string, password: string) => {
     try {
       const response = await api.post("auth/login/", {
-        email: email,
-        password: password,
+        email,
+        password,
       });
-      return response.data;
+
+      return response.data as { example: string };
     } catch (error) {
       throw error;
     }

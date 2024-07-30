@@ -1,25 +1,20 @@
 import React from "react";
+import { View } from "react-native";
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, View } from "react-native";
+
 import { ExampleScreen } from "./src/screens/ExampleScreen";
-import { GlobalColors } from "./src/utils/styles";
+import { styles } from "./styles";
 
 const App = () => {
   return (
-    <View style={styles.container}>
+    <View style={styles.root}>
       <ExampleScreen />
-      <StatusBar style="auto" />
+
+      {/* TODO: resolve that prettier problem */}
+      {/* eslint-disable-next-line react/style-prop-object */}
+      <StatusBar style="dark" />
     </View>
   );
 };
 
 export default App;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: GlobalColors.colors.SystemWhite,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
